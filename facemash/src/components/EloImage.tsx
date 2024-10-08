@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import myModule from './services/modules'
 import Ranking from './Ranking';
 
-const imageDir = "../src/assets/images/"
+const imageDir = "../../public/images/"
 const imageNaming = "anime"
 const arrayLength = 24;
 
