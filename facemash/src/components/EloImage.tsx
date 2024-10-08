@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import myModule from './services/modules'
 import Ranking from './Ranking';
 
-const imageDir = "../../public/images/"
+const imageDir = "/images/"
 const imageNaming = "anime"
 const arrayLength = 24;
 
@@ -21,7 +21,7 @@ const EloImage:React.FC = () => {
     useEffect(()=>{
         const tempImageArray:string[] = [];
         for(let i=1; i<arrayLength; i++) {
-            const img = `${imageNaming} ${i}.jpg`
+            const img = `${imageNaming}_${i}.jpg`
             tempImageArray.push(img);
             sessionStorage.setItem(img, baseRating.toString());
         }
